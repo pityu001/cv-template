@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+<style>
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: whitesmoke;
+}
+
+* {
+    box-sizing: border-box; 
+}
+
+.cv-container {
+    display: flex;
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.col1 {
+    background-color: rgb(39, 39, 82);
+    color: white;
+    width: 280px;
+    padding: 20px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col1 img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-bottom: 15px;
+}
+
+.col1 h2 {
+    margin: 10px 0;
+    text-align: center;
+}
+
+#job {
+    font-style: italic;
+    color: lightblue;
+    margin-bottom: 20px;
+}
+
+.col1 ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+#contact i {
+    color: lightblue;
+    margin-right: 8px;
+}
+
+
+.col2 {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.col2 h3 {
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    color: #333;
+}
+
+.col2 h4 {
+    margin: 10px 0 5px;
+    color: #555;
+}
+
+.col2 p, .col2 li {
+    color: #444;
+    line-height: 1.5;
+}
+
+.col2 ul {
+    padding-left: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .cv-container {
+        flex-direction: column;
+    }
+
+    .col1 {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .col2 {
+        padding: 20px;
+    }
+}
+
+</style>
+</head>
+<body>
+  <div class="cv-container">
+    <div class="col1">
+      <img src="img/user.jpg" alt="profile-picture" />
+      <h2>Your Name</h2>
+      <div id="job">Software Engineer</div>
+
+      <div id="contact">
+        <h2>Contact</h2>
+        <ul>
+          <li><i class="fa-solid fa-phone"></i> +1 2345 6789</li>
+          <li><i class="fa-solid fa-envelope"></i> example@gmail.com</li>
+          <li><i class="fa-solid fa-location-dot"></i> 1 Road, City/State - 0011</li>
+        </ul>
+      </div>
+
+      <div id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>SQL Database Management</li>
+          <li>Linux/Unix Command Line</li>
+          <li>Python</li>
+          <li>C++</li>
+          <li>Java</li>
+        </ul>
+      </div>
+
+      <div id="languages">
+        <h2>Languages</h2>
+        <ul>
+          <li>English: Proficient</li>
+          <li>Hindi: Proficient</li>
+        </ul>
+      </div>
+
+      <div id="hobbies">
+        <h2>Hobbies</h2>
+        <ul>
+          <li>Writing</li>
+          <li>Cricket</li>
+          <li>Music</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col2">
+      <div id="profile">
+        <h3><strong>Profile</strong></h3>
+        <p>
+          I am a passionate and dedicated software engineer with hands-on experience in multiple programming languages. I take pride in writing clean, efficient code and have a solid background in computer science. I enjoy collaborating with cross-functional teams to solve complex problems and deliver high-quality software solutions.
+        </p>
+      </div>
+
+      <div id="xp">
+        <h3><strong>Work Experience</strong></h3>
+
+        <h4><strong>Senior Software Developer</strong></h4>
+        <p><em>Company – Country | Jan 2022 – Dec 2023</em></p>
+        <ul>
+          <li>Developed and maintained enterprise-level software using Java, Python, and C++.</li>
+          <li>Led cross-functional teams to deliver projects on time and within scope.</li>
+          <li>Implemented automated testing frameworks and CI/CD pipelines.</li>
+        </ul>
+
+        <h4><strong>Web Developer</strong></h4>
+        <p><em>Company – Country | Jan 2021 – Dec 2021</em></p>
+        <ul>
+          <li>Developed and maintained responsive web applications using HTML, CSS, JavaScript, and PHP.</li>
+          <li>Collaborated with UX/UI designers and stakeholders to improve user experience.</li>
+          <li>Integrated RESTful APIs and optimized performance for large-scale web apps.</li>
+        </ul>
+      </div>
+
+      <div id="education">
+        <h3><strong>Education</strong></h3>
+
+        <h4><strong>Master’s in Software Engineering</strong></h4>
+        <p><em>Jan 2018 – Dec 2020</em></p>
+
+        <h4><strong>Bachelor’s in Computer Science</strong></h4>
+        <p><em>XYZ University, Bangalore | Jan 2015 – Dec 2018</em></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
